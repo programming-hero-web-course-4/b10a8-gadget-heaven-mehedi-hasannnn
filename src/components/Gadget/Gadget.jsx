@@ -7,7 +7,7 @@ const Gadget = ({ gadget }) => {
 
     return (
         <div>
-            <div className="card card-compact bg-base-100 w-96 shadow-xl p-6">
+            <div className="card card-compact bg-base-100 w- shadow-xl p-6 ">
   <figure className='py-8'>
     <img
       src={gadget.product_image}
