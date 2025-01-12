@@ -20,7 +20,7 @@ const Banner = () => {
                     <p className="mb-5 text-sm sm:text-base md:text-lg">
                         Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                     </p>
-                    <Link to="dashboard"><button className="btn btn-primary">Shop Now</button></Link>
+                    <Link to="dashboard"><button className="btn text-purple-600 bg-white rounded-2xl border-purple-600 font-bold">Shop Now</button></Link>
                 </div>
             </div>
         </div>

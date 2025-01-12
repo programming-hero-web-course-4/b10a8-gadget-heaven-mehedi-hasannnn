@@ -1,0 +1,171 @@
+[
+    {
+      "product_id": "L001",
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/1mgtNZh/dell-xps.jpg",
+      "category": "laptops",
+      "price": 999.99,
+      "description": "A sleek and powerful laptop with high-end performance for professionals.",
+      "Specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "13.3-inch 4K display",
+        "Windows 10"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "L002",
+      "product_title": "MacBook Pro 14",
+      "product_image": "https://i.ibb.co.com/RppQ9BC/macbook-pro14.jpg",
+      "category": "laptops",
+      "price": 1599.99,
+      "description": "Apple's powerful and portable laptop for creative professionals.",
+      "Specification": [
+        "Apple M1 Pro Chip",
+        "16GB RAM",
+        "1TB SSD",
+        "14-inch Retina display",
+        "macOS"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "L003",
+      "product_title": "HP Spectre x360",
+      "product_image": "https://i.ibb.co.com/P5bNvGr/hp-spectre.jpg",
+      "category": "laptops",
+      "price": 1199.99,
+      "description": "A convertible laptop with premium design and all-day battery life.",
+      "Specification": [
+        "Intel Core i7",
+        "8GB RAM",
+        "512GB SSD",
+        "13.3-inch OLED display",
+        "Windows 11"
+      ],
+      "availability": false,
+      "rating": 4.5
+    },
+    {
+      "product_id": "L004",
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "product_image": "https://i.ibb.co.com/bbDK2QH/lenovo-thinkpad.jpg",
+      "category": "laptops",
+      "price": 1399.99,
+      "description": "Lightweight and durable business laptop with exceptional performance.",
+      "Specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "14-inch Full HD display",
+        "Windows 10"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "L005",
+      "product_title": "Asus ZenBook 14",
+      "product_image": "https://i.ibb.co.com/098gpzJ/asus-zenbook.jpg",
+      "category": "laptops",
+      "price": 899.99,
+      "description": "Affordable yet powerful laptop with great design and battery life.",
+      "Specification": [
+        "Intel Core i5",
+        "8GB RAM",
+        "256GB SSD",
+        "14-inch Full HD display",
+        "Windows 11"
+      ],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": "L006",
+      "product_title": "Acer Predator Helios 300",
+      "product_image": "https://i.ibb.co.com/wrddcW8/acer-predator.jpg",
+      "category": "laptops",
+      "price": 1599.99,
+      "description": "A high-performance gaming laptop with an exceptional display and cooling system.",
+      "Specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "1TB SSD",
+        "15.6-inch Full HD display",
+        "Windows 10"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "P001",
+      "product_title": "Samsung Galaxy S21",
+      "product_image": "https://i.ibb.co.com/194cqxD/samsung-s21.jpg",
+      "category": "phones",
+      "price": 799.99,
+      "description": "Samsung's flagship smartphone with advanced camera features and performance.",
+      "Specification": [
+        "Exynos 2100",
+        "8GB RAM",
+        "128GB storage",
+        "6.2-inch Dynamic AMOLED display",
+        "Android 11"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "P002",
+      "product_title": "Apple iPhone 13 Pro",
+      "product_image": "https://i.ibb.co.com/9wXjKJ2/iphone13-pro.jpg",
+      "category": "phones",
+      "price": 999.99,
+      "description": "Apple's premium smartphone with excellent performance and camera quality.",
+      "Specification": [
+        "A15 Bionic chip",
+        "6GB RAM",
+        "256GB storage",
+        "6.1-inch Super Retina XDR display",
+        "iOS 15"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "S001",
+      "product_title": "Apple Watch Series 7",
+      "product_image": "https://i.ibb.co.com/XJZ4Q3G/apple-watch7.jpg",
+      "category": "smart watches",
+      "price": 399.99,
+      "description": "Apple's smart watch with health tracking features and a sleek design.",
+      "Specification": [
+        "44mm case",
+        "Always-on Retina display",
+        "Blood oxygen and ECG app",
+        "watchOS 8"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "S002",
+      "product_title": "Samsung Galaxy Watch 4",
+      "product_image": "https://i.ibb.co.com/q5JMBcx/Samsung-Galaxy-Watch-4.jpg",
+      "category": "smart watches",
+      "price": 249.99,
+      "description": "A stylish and functional smart watch with fitness tracking capabilities.",
+      "Specification": [
+        "1.4-inch AMOLED display",
+        "Fitness and health tracking",
+        "Wear OS powered by Samsung",
+        "Exynos W920 chipset"
+      ],
+      "availability": true,
+      "rating": 4.7
+    }
+  ]
+  
