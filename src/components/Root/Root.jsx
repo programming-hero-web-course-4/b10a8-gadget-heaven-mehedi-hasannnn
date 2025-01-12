@@ -1,9 +1,14 @@
 import React from 'react';
+import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
+import { Outlet } from 'react-router-dom';
 
 const Root = () => {
     return (
-        <div>
-            <h2 className='text-4xl text-red-500'>This is Homepage</h2>
+        <div className='max-w-6xl mx-auto'>
+            <NavBar></NavBar>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
