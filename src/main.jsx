@@ -10,6 +10,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
 import Dashboard from './components/Dashboard/Dashboard';
 import Statistics from './components/Statistics/Statistics';
+import GadgetDetail from './components/GadgetDetail/GadgetDetail';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: 'statistics',
         element: <Statistics></Statistics>
+      },
+      {
+        path: 'gadgets/:product_id',
+        element: <GadgetDetail></GadgetDetail>,
+        loader: () => fetch('/gadgetsData.json')
       }
     ]
   },
