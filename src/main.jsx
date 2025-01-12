@@ -11,6 +11,7 @@ import Home from './components/Home/Home';
 import Dashboard from './components/Dashboard/Dashboard';
 import Statistics from './components/Statistics/Statistics';
 import GadgetDetail from './components/GadgetDetail/GadgetDetail';
+import ContactUs from './components/Contact/ContactUs';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
         path: 'gadgets/:product_id',
         element: <GadgetDetail></GadgetDetail>,
         loader: () => fetch('/gadgetsData.json')
+      },
+      {
+        path: 'contactUs',
+        element: <ContactUs></ContactUs>
       }
     ]
   },
