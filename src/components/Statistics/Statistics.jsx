@@ -11,20 +11,20 @@ import {
     Legend,
     ResponsiveContainer,
 } from 'recharts';
+import { Helmet } from 'react-helmet-async';
 
 const Statistics = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        // Fetch data from the JSON file
         fetch('./gadgetsData.json')
             .then((response) => response.json())
             .then((jsonData) => {
-                // Filter relevant products (laptops, phones, smart watches) and map data for the chart
+                
                 const chartData = jsonData.map((item) => ({
-                    name: item.product_title,  // Using product_title for X-axis
-                    price: item.price,          // Using price for the Y-axis
-                    rating: item.rating,        // Using rating for Scatter data
+                    name: item.product_title,  
+                    price: item.price,         
+                    rating: item.rating,       
                 }));
                 setData(chartData);
             });
@@ -32,6 +32,9 @@ const Statistics = () => {
 
     return (
         <div className="p-6 max-w-4xl mx-auto">
+            <Helmet>
+   <title>Gadget Heaven || Statistics</title>
+</Helmet>
             <h2 className="text-4xl font-bold text-center mb-6">Product Statistics</h2>
             <p className="text-center text-gray-600 mb-6">
                 A visual representation of product prices and ratings.

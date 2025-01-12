@@ -12,6 +12,8 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Statistics from './components/Statistics/Statistics';
 import GadgetDetail from './components/GadgetDetail/GadgetDetail';
 import ContactUs from './components/Contact/ContactUs';
+import {HelmetProvider} from 'react-helmet-async';
+
 
 const router = createBrowserRouter([
   {
@@ -46,6 +48,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <HelmetProvider>
     <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>,
 )
