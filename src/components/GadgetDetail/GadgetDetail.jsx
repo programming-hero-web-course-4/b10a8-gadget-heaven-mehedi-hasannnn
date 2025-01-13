@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { addToStoredCartList, addToStoredWishList } from '../../utility/addToDb';
+import { Helmet } from 'react-helmet-async';
 
 const GadgetDetail = () => {
     const { product_id } = useParams();
@@ -41,7 +42,17 @@ const GadgetDetail = () => {
     };
 
     return (
-        <div className="flex flex-col md:flex-row items-center gap-8 p-6">
+        <div>
+            <div className='bg-purple-600 text-center p-10 mb-4 '>
+            <h2 className="text-4xl text-white  font-bold">Product Details</h2>
+            <p className="text-white mt-4 ">
+            Explore the latest gadgets that will take your experience to <br /> the next level. From smart devices to the coolest accessories, we have it all!
+            </p>
+            </div>
+            <div className="flex flex-col md:flex-row items-center gap-8 p-6">
+            <Helmet>
+              <title>Gadget Heaven || Product Details</title>
+           </Helmet>
            
             <div className="flex-shrink-0">
                 <img
@@ -118,6 +129,7 @@ const GadgetDetail = () => {
                 </div>
                 <Link to="/"><button className='btn mt-4 bg-purple-600 text-white'>Back</button></Link>
             </div>
+        </div>
         </div>
     );
 };
