@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const [allGadgets, setAllGadgets] = useState([]);
@@ -124,6 +125,9 @@ const Dashboard = () => {
 
   return (
     <div>
+      <Helmet>
+         <title>Gadget Heaven || Dashboard</title>
+      </Helmet>
       <div className='bg-purple-600 text-center p-10 mb-4 '>
             <h2 className="text-4xl text-white  font-bold">Product Statistics</h2>
             <p className="text-white mt-4 ">
