@@ -3,15 +3,17 @@ import { Helmet } from 'react-helmet-async';
 
 const ContactUs = () => {
     return (
-        <div className="p-6 max-w-4xl mx-auto">
+        <div className="mx-auto">
 <Helmet>
    <title>Gadget Heaven || Contact Us</title>
 </Helmet>
-            <h2 className="text-4xl font-bold text-center mb-6">Contact Us</h2>
-            <p className="text-center text-gray-600 mb-10">
-                Have questions or need assistance? Reach out to us using the form below!
-            </p>
-            <form className="space-y-6">
+            
+<div className='bg-purple-600 text-center p-10'>
+            <h2 className='text-4xl text-white  font-bold'>Dashboard</h2>
+            <p className='text-white mt-4 '>Have questions or need assistance? Reach out to us using the form below!</p>
+            </div>
+            
+            <form className="space-y-6 p-6 max-w-4xl">
                 <div>
                     <label className="block text-sm font-medium text-gray-700" htmlFor="name">Your Name</label>
                     <input

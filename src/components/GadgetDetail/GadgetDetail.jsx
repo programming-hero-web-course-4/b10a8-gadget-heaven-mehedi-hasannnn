@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { addToStoredCartList, addToStoredWishList } from '../../utility/addToDb';
 
 const GadgetDetail = () => {
     const { product_id } = useParams();
@@ -15,6 +16,15 @@ const GadgetDetail = () => {
         availability,
         rating,
     } = gadget;
+
+    const handleAddToCart = (product_id) =>{
+        addToStoredCartList(product_id);
+       
+    }
+
+    const handleAddToWishlist = () =>{
+        addToStoredWishList(product_id);
+    }
 
     const renderStars = (rating) => {
         const fullStars = Math.floor(rating);
@@ -71,7 +81,7 @@ const GadgetDetail = () => {
                 </div>
 
                 <div className="flex gap-4">
-                    <button className="btn bg-purple-600 text-white flex items-center gap-2">
+                    <button onClick={()=> handleAddToCart(product_id)} className="btn bg-purple-600 text-white flex items-center gap-2">
                         Add To Cart
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +98,7 @@ const GadgetDetail = () => {
                             />
                         </svg>
                     </button>
-                    <button className="btn bg-purple-600 text-white flex items-center gap-2">
+                    <button onClick={()=>handleAddToWishlist(product_id)} className="btn bg-purple-600 text-white flex items-center gap-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"

@@ -31,14 +31,16 @@ const Statistics = () => {
     }, []);
 
     return (
-        <div className="p-6 max-w-4xl mx-auto">
+        <div className=" mx-auto">
             <Helmet>
    <title>Gadget Heaven || Statistics</title>
 </Helmet>
-            <h2 className="text-4xl font-bold text-center mb-6">Product Statistics</h2>
-            <p className="text-center text-gray-600 mb-6">
-                A visual representation of product prices and ratings.
+            <div className='bg-purple-600 text-center p-10 mb-4 '>
+            <h2 className="text-4xl text-white  font-bold">Product Statistics</h2>
+            <p className="text-white mt-4 ">
+            Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
             </p>
+            </div>
             {data.length > 0 ? (
                 <ResponsiveContainer width="100%" height={400}>
                     <ComposedChart data={data}>
