@@ -47,7 +47,3 @@ The project utilizes several key React concepts, including:
 
 ---
 
-## How to Run the Project Locally
-1. Clone the repository:
-   ```bash
-   git clone <REPOSITORY_LINK>
